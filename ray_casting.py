@@ -2,7 +2,7 @@ import pygame
 from settings import *
 from map import world_map
 
-def ray_casting(sc, player_pos, player_angle):
+def ray_casting(game, player_pos, player_angle):
     cur_angle = player_angle - HALF_FOV
     xo, yo = player_pos
     for ray in range(NUM_RAYS):
@@ -11,7 +11,7 @@ def ray_casting(sc, player_pos, player_angle):
         for depth in range(MAX_DEPTH):
             x = xo + depth * cos_a
             y = yo + depth * sin_a
-            pygame.draw.line(sc, DARKGRAY, player_pos, (x, y), 2)
+            pygame.draw.line(game, DARKGRAY, player_pos, (x, y), 2)
             if (x // TILE * TILE, y // TILE * TILE) in world_map:
                 break
         cur_angle += DELTA_ANGLE
