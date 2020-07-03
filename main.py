@@ -17,7 +17,7 @@ while True:
     player.movement()
     sc.fill(BLACK)
 
-    pygame.draw.circle(sc, GREEN, player.pos, 12)
+    pygame.draw.circle(sc, GREEN, (int(player.x), int(player.y)), 12)
     pygame.draw.line(sc, GREEN, player.pos, (player.x + WIDTH * math.cos(player.angle),
                                              player.y + WIDTH * math.sin(player.angle)))
 
