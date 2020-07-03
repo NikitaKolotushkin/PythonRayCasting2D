@@ -6,7 +6,7 @@ Visualization of Ray Casting technology in python.
 + Find the **"text_map"** variable
 + Change map
 
-Map example:
+###### Map example:
 ```python
 text_map = [
     'WWWWWWWWWWWW',
