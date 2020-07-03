@@ -4,4 +4,5 @@ Visualization of Ray Casting technology in python.
 + Open a **map.py** file
 + Find the **"text_map"** variable
 + Change map
-**Note:** The wall is indicated by the symbol **'W'**, and empty space by the symbol **'.'**.
+
+**Note:** _The wall is indicated by the symbol ***'W'***, and empty space by the symbol ***'.'***._
