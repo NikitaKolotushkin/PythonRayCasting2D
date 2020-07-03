@@ -3,6 +3,7 @@ from settings import *
 from player import Player
 import math
 from map import world_map
+from ray_casting import ray_casting
 
 pygame.init()
 sc = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -16,6 +17,8 @@ while True:
 
     player.movement()
     sc.fill(BLACK)
+
+    ray_casting(sc, player.pos, player.angle)
 
     pygame.draw.circle(sc, GREEN, (int(player.x), int(player.y)), 12)
     pygame.draw.line(sc, GREEN, player.pos, (player.x + WIDTH * math.cos(player.angle),
