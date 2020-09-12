@@ -1,5 +1,8 @@
 # PythonRayCasting2D
 Visualization of Ray Casting technology in python.
+
+![screenshot](img/screenshot.png)
+
 ### How to change map?
 
 + Open a **map.py** file
